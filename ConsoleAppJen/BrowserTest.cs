@@ -11,7 +11,8 @@ namespace ConsoleAppJen
     [TestFixture]
     public class BrowserTEst : Hooks
     {
-
+        static void main()
+        { }
 
 
         [Test]
@@ -33,5 +34,4 @@ namespace ConsoleAppJen
             Driver.FindElement(By.Id("FirstName")).SendKeys("Nisha");
 
         }
-    }
-}
+    } }
