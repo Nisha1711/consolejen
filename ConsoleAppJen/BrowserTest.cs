@@ -9,11 +9,9 @@ using System;
 namespace ConsoleAppJen
 {
     [TestFixture]
-    public class BrowserTEst : Hooks
+    public class BrowserTest : Hooks
     {
-        static void main()
-        { }
-
+       
 
         [Test]
         public void Test1()

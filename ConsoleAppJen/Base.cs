@@ -1,14 +1,14 @@
 ﻿using OpenQA.Selenium;
-
+using NUnit.Framework;
 
 namespace ConsoleAppJen
 {
-    
-            //Base class
-        public class Base
-        {
 
-            public IWebDriver Driver { get; set; }
+    [TestFixture]     //Base class
+    public class Base
+    { 
+
+        public IWebDriver Driver { get; set; }
 
         }
     }

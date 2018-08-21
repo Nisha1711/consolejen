@@ -5,9 +5,10 @@ using OpenQA.Selenium.IE;
 using System;
 
 namespace ConsoleAppJen
-{
+{ [TestFixture]
     public class Hooks : Base
     {
+        
 
 
         //Enum for browserType
@@ -19,7 +20,7 @@ namespace ConsoleAppJen
         }
         private BrowerType _browserType;
 
-        [SetUp]
+        [OneTimeSetUp]
         public void InitializeTest()
         {
             //Get the value from NUnit-console --params 
