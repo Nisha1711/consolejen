@@ -28,7 +28,7 @@ namespace ConsoleAppJen
        [Test]
         public void Test2()
         {
-            SelectElement oSelect = new SelectElement(Driver.FindElement(By.Id("leId")));
+            SelectElement oSelect = new SelectElement(Driver.FindElement(By.Id("TitleId")));
             oSelect.SelectByIndex(1);
             Driver.FindElement(By.Id("Initial")).SendKeys("T");
             Driver.FindElement(By.Id("FirstName")).SendKeys("ABC");
