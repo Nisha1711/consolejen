@@ -17,7 +17,7 @@ namespace ConsoleAppJen
         public void Test1()
         {
 
-            Driver.Navigate().GoToUrl("automation.com/demosite/Login.html");
+            Driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
             Driver.FindElement(By.Name("UserName")).SendKeys("admin");
             Driver.FindElement(By.Name("Password")).SendKeys("admin");
             Driver.FindElement(By.XPath("/html/body/form/p[3]/input")).Click();
