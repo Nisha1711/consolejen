@@ -21,8 +21,6 @@ namespace ConsoleAppJen
             Driver.FindElement(By.Name("UserName")).SendKeys("admin");
             Driver.FindElement(By.Name("Password")).SendKeys("admin");
             Driver.FindElement(By.XPath("/html/body/form/p[3]/input")).Click();
-            Assert.Pass("Test1 is pass");
-        
         }
 
        [Test]
@@ -36,7 +34,6 @@ namespace ConsoleAppJen
             IWebElement radioBtn = Driver.FindElement(By.Name("Male"));
             radioBtn.Click();
             Driver.FindElement(By.Name("Save")).Click();
-            Assert.Pass("Test2 is pass");
 
         }
     } }
