@@ -13,16 +13,7 @@ namespace ConsoleAppJen
     {
        
 
-        [Test]
-        public void Test1()
-        {
-
-            Driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
-            Driver.FindElement(By.Name("UserName")).SendKeys("admin");
-            Driver.FindElement(By.Name("Password")).SendKeys("admin");
-            Driver.FindElement(By.XPath("/html/body/form/p[3]/input")).Click();
-        }
-
+       
        [Test]
         public void Test2()
         {
