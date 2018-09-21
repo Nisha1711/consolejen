@@ -16,6 +16,10 @@ namespace ConsoleAppJen
             Firefox,
             IE
         }
+        string t = "admin", v="admin";
+        string t1 = "admin1", v1 = "admin1";
+        string t2 = "admin2", v2 = "admin2";
+
         private BrowerType _browserType;
 
         [OneTimeSetUp]
@@ -32,30 +36,29 @@ namespace ConsoleAppJen
             if (browserType == BrowerType.Chrome)
             {
                 Driver = new ChromeDriver();
-                Driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
-                Driver.FindElement(By.Name("UserName")).SendKeys("admin");
-                Driver.FindElement(By.Name("Password")).SendKeys("admin");
-                Driver.FindElement(By.XPath("/html/body/form/p[3]/input")).Click();
+                login(t,v);
             }
 
             else if (browserType == BrowerType.Firefox)
             {
 
                 Driver = new FirefoxDriver();
-                Driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
-                Driver.FindElement(By.Name("UserName")).SendKeys("admin2");
-                Driver.FindElement(By.Name("Password")).SendKeys("admin2");
-                Driver.FindElement(By.XPath("/html/body/form/p[3]/input")).Click();
+                login(t1, v1);
             }
             else if (browserType == BrowerType.IE)
             {
                 Driver = new InternetExplorerDriver();
+                login(t2, v2);
+            } }
+
+          public  void login(String t,String v)
+            {
                 Driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
-                Driver.FindElement(By.Name("UserName")).SendKeys("admin3");
-                Driver.FindElement(By.Name("Password")).SendKeys("admin3");
+                Driver.FindElement(By.Name("UserName")).SendKeys(t);
+                Driver.FindElement(By.Name("Password")).SendKeys(v);
                 Driver.FindElement(By.XPath("/html/body/form/p[3]/input")).Click();
             }
-        }
+        
     }
     }
 

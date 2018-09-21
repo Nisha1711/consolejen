@@ -12,8 +12,6 @@ namespace ConsoleAppJen
     public class BrowserTest : Hooks
     {
        
-
-       
        [Test]
         public void Test2()
         {
