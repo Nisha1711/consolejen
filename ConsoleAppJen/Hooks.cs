@@ -36,22 +36,21 @@ namespace ConsoleAppJen
             if (browserType == BrowerType.Chrome)
             {
                 Driver = new ChromeDriver();
-                login(t,v);
+                Login(t,v);
             }
 
             else if (browserType == BrowerType.Firefox)
             {
-
                 Driver = new FirefoxDriver();
-                login(t1, v1);
+                Login(t1, v1);
             }
             else if (browserType == BrowerType.IE)
             {
                 Driver = new InternetExplorerDriver();
-                login(t2, v2);
+                Login(t2, v2);
             } }
 
-          public  void login(String t,String v)
+          public  void Login(String t,String v)
             {
                 Driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
                 Driver.FindElement(By.Name("UserName")).SendKeys(t);
