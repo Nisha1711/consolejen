@@ -16,9 +16,9 @@ namespace ConsoleAppJen
             Firefox,
             IE
         }
-        string t = "admin", v="admin";
-        string t1 = "admin1", v1 = "admin1";
-        string t2 = "admin2", v2 = "admin2";
+        string t = "admin1", v="admin1";
+        string t1 = "admin2", v1 = "admin2";
+        string t2 = "admin3", v2 = "admin3";
 
         private BrowerType _browserType;
 
